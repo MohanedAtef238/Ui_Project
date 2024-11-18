@@ -109,7 +109,8 @@ body {
         font-size: 10vw; 
     }
 }
-/* .footer-block {
+
+.footer-block {
     background: linear-gradient(to bottom, hsla(238, 52%, 63%, 1) 0%, rgba(0, 0, 255, 0) 100%);
     padding: 20px 0;
     color: var(--text-color);
@@ -117,7 +118,8 @@ body {
     width: 100%;
     position: relative;
     top: -10px; /* Adjust this to position it just under the image */
-} */
+}
+
 
 /* .footer-block::before {
     content: '';
