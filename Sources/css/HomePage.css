@@ -33,7 +33,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--text-color);
-    font-size: 6vw; /* Larger size for main text */
+    font-size: 6vw; 
     font-weight: bold;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     white-space: nowrap;
@@ -50,7 +50,7 @@ body {
     transform: translateX(-50%);
     background-color: hsla(238, 52%, 63%, 1);
     color: var(--text-color);
-    font-size: 3.5vw; /* Smaller size for the button */
+    font-size: 3.5vw; 
     font-weight: bold;
     padding: 1.5vw 3vw;
     border: none;
@@ -82,12 +82,12 @@ body {
     }
 
     .image-container .browse-button {
-        font-size: 1.5vw; /* Smaller button on larger screens */
+        font-size: 1.5vw; 
         padding: 1vw 2vw;
     }
 
     .image-container .banner-text {
-        font-size: 5vw; /* Adjusted for larger screens */
+        font-size: 5vw; 
     }
 }
 
@@ -101,15 +101,15 @@ body {
     }
 
     .image-container .browse-button {
-        font-size: 3vw; /* Larger button on smaller screens */
+        font-size: 3vw; 
         padding: 3vw 5vw;
     }
 
     .image-container .banner-text {
-        font-size: 10vw; /* Adjust the text size on small screens */
+        font-size: 10vw; 
     }
 }
-.footer-block {
+/* .footer-block {
     background: linear-gradient(to bottom, hsla(238, 52%, 63%, 1) 0%, rgba(0, 0, 255, 0) 100%);
     padding: 20px 0;
     color: var(--text-color);
@@ -117,7 +117,7 @@ body {
     width: 100%;
     position: relative;
     top: -10px; /* Adjust this to position it just under the image */
-}
+} */
 
 /* .footer-block::before {
     content: '';
