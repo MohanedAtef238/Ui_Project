@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Interface Projecte</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Sources/css/NavbarTopFixed.css">
 </head>
 <body>
     <template id="navbar-template">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Travel & Destination </a>
+            <a class="navbar-brand" href="#">Travel & Destination</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="BlogList.html">Blogs <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
@@ -31,6 +32,23 @@
             </div>
         </nav>
     </template>
+    <!-- its useless, the page resets whenever a new page opens -->
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const currentPath = window.location.pathname.split('/').pop();
+            navLinks.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href === currentPath) {
+                    link.closest('.nav-item').classList.add(' active');
+                    navLinks.forEach(otherLink => {
+                        if (otherLink !== link) { otherLink.closest('.nav-item').classList.remove(' active');}
+                    });
+                }
+            });
+        });
+    </script> -->
+    
     <div class="container mt-5">
         <h1>Testing</h1>
     </div>

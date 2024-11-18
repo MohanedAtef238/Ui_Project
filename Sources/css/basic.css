@@ -20,7 +20,7 @@
 
 /* Primary, Secondary, Accent Assignments */
 :root {
-    --primary-color: var(--color-medium-slate-blue);
+    --main-color: var(--color-medium-slate-blue);
     --secondary-color: var(--color-glaucous);
     --accent-color: var(--color-salmon-pink);
     --background-color: var(--color-baby-powder);
