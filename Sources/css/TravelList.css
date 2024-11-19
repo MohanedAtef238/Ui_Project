@@ -12,11 +12,16 @@
     row-gap: 10px;
     column-gap: 70px;
 }
+
+.alert p{
+    margin-top: -10px;
+}
+
 .alert{
-    margin-bottom: 0;
-    width:13.8em;
-    height:2em;
-    margin-left: 5px;
+    margin-bottom: -8px;
+    width: 4.8em;
+    height: 2em;
+    margin-left: 190px;
 }
 .card-img-top
 {
