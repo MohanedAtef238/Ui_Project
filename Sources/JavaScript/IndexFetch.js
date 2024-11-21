@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 fetch('index.html') // Load the index.html file
+=======
+fetch('../../Pages/index.html')
+>>>>>>> Stashed changes
     .then(response => response.text())
     .then(data => {
 

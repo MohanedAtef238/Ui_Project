@@ -1,34 +1,22 @@
 /* === COLOR VARIABLES === */
 
-/* CSS HEX Colors (Defined for General Use) */
 :root {
-    --color-baby-powder: #fbfef9;
-    --color-raisin-black: #191923;
-    --color-medium-slate-blue: #6f73d2;
-    --color-glaucous: #7681b3;
-    --color-salmon-pink: #f39a9d;
+    --main-powder: #fbfef9ff;
+    --text-color: #191923ff;
+    --accents: #FDBC86;
+    --accents-gray: #b6c0cdff;
+    --accents-pink: #f39a9dff;
 }
 
-/* CSS HSL Colors (Alternate Formats) */
 :root {
-    --color-baby-powder-hsl: hsla(96, 71%, 99%, 1);
-    --color-raisin-black-hsl: hsla(240, 17%, 12%, 1);
-    --color-medium-slate-blue-hsl: hsla(238, 52%, 63%, 1);
-    --color-glaucous-hsl: hsla(229, 29%, 58%, 1);
-    --color-salmon-pink-hsl: hsla(358, 79%, 78%, 1);
-}
-
-/* Primary, Secondary, Accent Assignments */
-:root {
-    --main-color: var(--color-medium-slate-blue);
-    --secondary-color: var(--color-glaucous);
-    --accent-color: var(--color-salmon-pink);
-    --background-color: var(--color-baby-powder);
-    --text-color: var(--color-raisin-black);
+    --baby-powder: #fbfef9ff;
+    --raisin-black: #191923ff;
+    --khaki: #FDBC86;
+    --french-gray: #b6c0cdff;
+    --salmon-pink: #f39a9dff;
 }
 
 /* === GRADIENTS === */
-
 /* Common Gradient Definitions (Hex Format) */
 :root {
     --gradient-top: linear-gradient(0deg, var(--color-baby-powder), var(--color-raisin-black), var(--color-medium-slate-blue), var(--color-glaucous), var(--color-salmon-pink));
