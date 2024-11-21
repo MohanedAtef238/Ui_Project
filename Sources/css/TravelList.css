@@ -1,13 +1,14 @@
-@import url('Sources\css\basic.css');
-
 #SearchKit{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    column-gap: 5px;
+    column-gap: 12px;
 }
 #LocationSelect{
-    width:2em;
+    width:12em;
+    height:2em;
+    text-align: center;
+    margin-left: auto;
 
 }
 #SearchBox {
@@ -22,6 +23,16 @@
     z-index: 0;
 
     font-style: italic;
+}
+.btn-group{
+    height:2.5em;
+
+}
+
+.btn{
+    border-color: black;
+    color: black;
+    width:5em;
 }
 
 .SBContainer{
@@ -48,7 +59,7 @@
     justify-content:flex-start;
     flex-wrap:wrap;
     padding: 2rem;
-    row-gap: 10px;
+    row-gap: 35px;
     column-gap: 70px;
  
 }

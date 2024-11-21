@@ -1,4 +1,4 @@
-fetch('../../Pages/index.html') // Load the index.html file
+fetch('index.html') // Load the index.html file
     .then(response => response.text())
     .then(data => {
 
