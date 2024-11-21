@@ -1,3 +1,36 @@
+@import url('Sources\css\basic.css');
+
+#SearchKit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 5px;
+}
+#LocationSelect{
+    width:2em;
+
+}
+#SearchBox {
+    display:block;
+    position: relative;
+    width:100%;
+    height:100%;
+    margin: auto auto;
+    border-radius: 10px;
+    padding-left: 20px;
+    border-width: 1px;
+    z-index: 0;
+
+    font-style: italic;
+}
+
+.SBContainer{
+    position: relative;
+    width:35rem;
+    height:2rem;
+}
+
+
 .CardsContainer{
         /*background-color:  #dddddd;*/
     width:95%;
@@ -47,3 +80,4 @@
     font-style: italic;
     color: rgb(95, 95, 95);
 }
+
