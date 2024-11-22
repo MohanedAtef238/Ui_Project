@@ -1,4 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+    const carouselWheel = document.getElementById('testimonialsCarousel');
+    if (carouselWheel) {
+        const carousel = new bootstrap.Carousel(carouselWheel, {
+            interval: 5000, 
+            wrap: true      
+        });}
+
+
         const images = document.querySelectorAll('img');
 
         images.forEach((element) => {
