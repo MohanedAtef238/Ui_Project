@@ -1,5 +1,58 @@
+
+#RealBody{
+    width:1480px;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(242, 242, 242);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#vertical1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 #left1
 {
-    width:50%;
-    margin-left:0px;
+    width:32em;
+    margin-left:10em;
+    margin-top:5em;
+}
+
+#right1
+{
+    width:32em;
+    margin-left:auto;
+    margin-right:10em;
+    margin-top:5em;
+}
+
+#title{
+    font-size:3em;
+    margin-left: 1em;
+}
+
+#ButGrid{
+    width:100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap:10px ;
+}
+.Box{
+    border-radius:52px;
+    width:100%;
+    aspect-ratio: 1/1;
+    border-width: 1;
+    border-style: solid;
+    padding:5px;
+}
+
+.BoxTitle{
+    text-align: center;
+    margin-top: 43%;
+    font-size: 1.5em;
 }
