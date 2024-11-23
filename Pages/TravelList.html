@@ -8,6 +8,7 @@
         <link href="../Sources/css/TravelList.css" rel="stylesheet">
         <title>Travel List</title>
         <script src="../Sources/JavaScript/IndexFetch.js"></script>
+        <script src="../Sources/JavaScript/TravelList.js"></script>
     </head>
     <body>
             <div id="navbar-container" style="margin-bottom:20px;"></div>
@@ -21,7 +22,7 @@
                     </select>
                 </div>
                 <div class="SBContainer">
-                    <input type="text" id="SearchBox" placeholder="Search For destination . . .">
+                    <input type="text" style="display: block;" id="SearchBox" placeholder="Search For destination . . ." onkeyup="SearchFilter(this.value)" >
                     <img src="../Sources/img/search.png" style="width:6%;margin-left:515px;margin-top: -30px;opacity: 50%;">
                 </div>
                 <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
