@@ -15,7 +15,7 @@
         
             <div id="SearchKit">
                 <div id="LSDiv">
-                    <select id="LocationSelect">
+                    <select id="LocationSelect" onchange="SearchFilter(this.value)">
                         <option>All</option>
                         <option>UK</option>
                         <option>USA</option>
@@ -26,13 +26,13 @@
                     <img src="../Sources/img/search.png" style="width:6%;margin-left:515px;margin-top: -30px;opacity: 50%;">
                 </div>
                 <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                    <label class="btn btn-outline-primary" for="btncheck1">All</label>
+                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" value="All" onclick="CheckFilter(this.value,this.checked)">
+                    <label class="btn btn-outline-primary" for="btncheck1" >All</label>
               
-                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off" value="Hot" onclick="CheckFilter(this.value,this.checked)">
                     <label class="btn btn-outline-primary" for="btncheck2">Hot</label>
               
-                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off" value="New" onclick="CheckFilter(this.value,this.checked)">
                     <label class="btn btn-outline-primary" for="btncheck3">New</label>
                 </div>
             </div>
