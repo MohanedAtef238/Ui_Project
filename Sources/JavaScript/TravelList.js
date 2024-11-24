@@ -14,12 +14,12 @@ addEventListener("DOMContentLoaded",()=>{
         console.log(name);
         for(var i=0;i<cardTitles.length;i++)
         {
-            if(!cardTitles[i].innerText.toLowerCase().trim().includes(name.toLowerCase().trim()))
+            if(!cardTitles[i].innerText.toLowerCase().trim().includes(name.toLowerCase().trim()) && name!='All')
             {
                 cards[i].style.display="none";
             }
 
-            if(cardTitles[i].innerText.toLowerCase().trim().includes(name.toLowerCase().trim()))
+            if(cardTitles[i].innerText.toLowerCase().trim().includes(name.toLowerCase().trim()) || name=='All')
             {
                 cards[i].style.display="block";
             }
@@ -42,7 +42,7 @@ addEventListener("DOMContentLoaded",()=>{
         {
             for(var i=0;i<cardAlerts.length;i++)
             {
-                cards[i].style.display="block"
+                cards[i].style.display="block";
             }
         }
 
