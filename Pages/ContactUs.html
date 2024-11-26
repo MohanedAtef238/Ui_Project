@@ -66,39 +66,29 @@
       const form = document.querySelector("form");
 
       form.addEventListener("submit", function (event) {
-      
         const fullName = form.elements["fullName"].value.trim();
         const email = form.elements["email"].value.trim();
         const message = form.elements["message"].value.trim();
 
-      
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-        let isValid = true;
-        let errorMessage = "";
-
-        
+        let boolValidation = true;
+        let errorAlert = "";
         if (fullName.length < 3) {
-          isValid = false;
-          errorMessage += "Full Name must be at least 3 characters long.\n";
+          boolValidation = false;
+          errorAlert += "Full Name must be at least 3 characters long.\n";
         }
-
-        
         if (!emailPattern.test(email)) {
-          isValid = false;
-          errorMessage += "Please enter a valid email address.\n";
+          boolValidation = false;
+          errorAlert += "Please enter a valid email address.\n";
         }
-
-       
         if (message.length < 10) {
-          isValid = false;
-          errorMessage += "Message must be at least 10 characters long.\n";
+          boolValidation = false;
+          errorAlert += "Message must be at least 10 characters long.\n";
         }
-
-        
-        if (!isValid) {
+        if (!boolValidation) {
           event.preventDefault();
-          alert(errorMessage);
+          alert(errorAlert);
         }
       });
     });
