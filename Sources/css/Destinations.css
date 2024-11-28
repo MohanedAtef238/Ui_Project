@@ -74,7 +74,6 @@ body{
     margin-right: auto;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 
@@ -89,6 +88,8 @@ body{
     margin-top: 4em;
     overflow: hidden;
     text-overflow:ellipsis;
+    padding-top: 20px;
+    position: relative;
 }
 
 
@@ -129,4 +130,62 @@ flex-grow: 1; }
 
 #expand:hover{
     background-color: rgb(189, 189, 189);
+}@media (max-width: 768px) {
+    #RealBody {
+        width: 95%;
+    }
+
+    #vertical1 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    #left1,
+    #right1 {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    #title {
+        font-size: 1.8em; 
+    }
+
+    #SponsorsPics img {
+        width: 80%; 
+        margin: 5px auto;
+        display: block;
+    }
+
+    #vertical2 {
+        gap: 0.5px; 
+        height: 200px; 
+    }
+
+    .FlexItem {
+        width: 100%; 
+        height: auto;
+    }
+
+    .GalleryImg {
+        max-height: 15vh; 
+        object-fit: cover;
+    }
+
+    #vertical3 {
+        padding: 1.5em;
+    }
+
+    #btitle {
+        font-size: 1.2em;
+    }
+
+    #yapping {
+        font-size: 0.8em; 
+    }
+
+    #expand {
+        font-size: 0.8em; 
+        padding: 0.3em;
+    }
 }
+
