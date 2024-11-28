@@ -1,17 +1,192 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-        <link href="../Sources/css/BlogList.css" rel="stylesheet">
-        <title>Blog List</title>
-        <script src="../Sources/JavaScript/IndexFetch.js"></script>
-    </head>
-    <body>
-        <div id="navbar-container"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../Sources/css/BlogList.css" rel="stylesheet">
+    <link href="../Sources/css/NavbarTopFixed.css" rel="stylesheet">
+    <link href="../Sources/JavaScript/test.js" rel="JavaScript">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Sources/css/HomePage.css">
+    <link rel="stylesheet" href="/Sources/css/NavbarTopFixed.css">
+    <script src="../Sources/JavaScript/IndexFetch.js"></script>
+    <script src ="../Sources/JavaScript/BlogList.js"></script>
+    <script src ="../Sources/JavaScript/IndexFetch.js"></script>
+
+    <title>Blog List</title>
+</head>
+
+<body>
+    <div id="navbar-container">
         <div class="SBContainer">
             <input type="text" id="SearchBox" placeholder="Search For Blog . . .">
-            <img src="../Sources/img/search.png" style="width:6%;margin-left:515px;margin-top: -30px;opacity: 50%;">
+            <select id="FilterBox">
+                <option value="all">All</option>
+                <option value="popular">Popular</option>
+                <option value="recent">Recent</option>
+            </select>
         </div>
-    </body>
+    </div>
+
+
+    <div class="container">
+        <div class="blog-grid">
+            <div class="Recent-Blog">
+                <img src="../Sources/img/blogss/Egypt.jpg" class="img-fluid" alt="">
+                <div class="card-info" >
+                    <div class ="card-title">
+                    <h4 class="blog-title">Pyramids are overrated ?</h4>
+                    </div>
+                    <h6 class="country">Egypt</h6>
+                    <p class="blog-description">well, i got lots of words i want to say about .....</p>
+                    <a href="DetaledBlogtwo.html" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="Recent-Blog">
+                <img src="../Sources/img/blogss/australlia.jpg" class="img-fluid" alt="">
+                <div class="card-info">
+                    <h4 class="blog-title">Lots of spiders</h4>
+                    <h6 class="country">Australlia</h6>
+                    <p class="blog-description">well, i got lots of words i want to say about .....</p>
+                    <a href="DetaledBlogtwo.html" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="Recent-Blog">
+                <img src="../Sources/img/blogss/canada.jpg" class="img-fluid" alt="">
+                <div class="card-info">
+                    <h4 class="blog-title">Everyone hates America</h4>
+                    <h6 class="country">Canada</h6>
+                    <p class="blog-description">well, i got lots of words i want to say about .....</p>
+                    <a href="DetaledBlogtwo.html" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="Recent-Blog">
+                <img src="../Sources/img/blogss/ireland.jpg" class="img-fluid" alt="">
+                <div class="card-info">
+                    <h4 class="blog-title">Hey red head</h4>
+                    <h6 class="country">Ireland</h6>
+                    <p class="blog-description">well, i got lots of words i want to say about .....</p>
+                    <a href="DetaledBlogtwo.html" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="Popular-Blog">
+                <img src="../Sources/img/blogss/mexixo.jpg" class="img-fluid" alt="">
+                <div class="card-info">
+                    <h4 class="blog-title">Nachos are so good!</h4>
+                    <h6 class="country">Mexica</h6>
+                    <p class="blog-description">well, i got lots of words i want to say about .....</p>
+                    <a href="DetaledBlogtwo.html" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="Popular-Blog">
+                <img src="../Sources/img/blogss/morocco.jpg" class="img-fluid" alt="">
+                <div class="card-info">
+                    <h4 class="blog-title">got robbed 5 times</h4>
+                    <h6 class="country">Morocco</h6>
+                    <p class="blog-description">well, i got lots of words i want to say about .....</p>
+                    <a href="DetaledBlogtwo.html" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="Popular-Blog">
+                <img src="../Sources/img/blogss/qatar.jpg" class="img-fluid" alt="">
+                <div class="card-info">
+                    <h4 class="blog-title">Such a big apartment</h4>
+                    <h6 class="country">Qatar</h6>
+                    <p class="blog-description">well, i got lots of words i want to say about .....</p>
+                    <a href="DetaledBlogtwo.html" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="Popular-Blog">
+                <img src="../Sources/img/blogss/russia.jpg" class="img-fluid" alt="">
+                <div class="card-info">
+                    <h4 class="blog-title">WOW hitler</h4>
+                    <h6 class="country">Russia</h6>
+                    <p class="blog-description">well, i got lots of words i want to say about .....</p>
+                    <a href="DetaledBlogtwo.html" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="Recent-Blog">
+                <img src="../Sources/img/blogss/saudi.jpg" class="img-fluid" alt="">
+                <div class="card-info">
+                    <h4 class="blog-title">Oily moily</h4>
+                    <h6 class="country">Saudi Arabia</h6>
+                    <p class="blog-description">well, i got lots of words i want to say about .....</p>
+                    <a href="DetaledBlogtwo.html" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="Recent-Blog">
+                <img src="../Sources/img/blogss/swizerland.jpg" class="img-fluid" alt="">
+                <div class="card-info">
+                    <h4 class="blog-title">Chocolate,Chooccclaattee</h4>
+                    <h6 class="country">Swizerland</h6>
+                    <p class="blog-description">well, i got lots of words i want to say about .....</p>
+                    <a href="DetaledBlogtwo.html" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="Recent-Blog">
+                <img src="../Sources/img/blogss/UAE.jpg" class="img-fluid" alt="">
+                <div class="card-info">
+                    <h4 class="blog-title">I only see indians</h4>
+                    <h6 class="country">United Arab Emirates</h6>
+                    <p class="blog-description">well, i got lots of words i want to say about .....</p>
+                    <a href="DetaledBlogtwo.html" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="Recent-Blog">
+                <img src="../Sources/img/blogss/yemen.jpg" class="img-fluid" alt="">
+                <div class="card-info">
+                    <h4 class="blog-title">where the hell is my way back ?</h4>
+                    <h6 class="country">Yemen</h6>
+                    <p class="blog-description">well, i got lots of words i want to say about .....</p>
+                    <a href="DetaledBlogtwo.html" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="Popular-Blog">
+                <img src="../Sources/img/blogss/norway.jpg" class="img-fluid" alt="">
+                <div class="card-info">
+                    <h4 class="blog-title">Am i dreaming or this is real ?</h4>
+                    <h6 class="country">Norway</h6>
+                    <p class="blog-description">well, i got lots of words i want to say about .....</p>
+                    <a href="DetaledBlogtwo.html" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="Popular-Blog">
+                <img src="../Sources/img/blogss/japan.jpg" class="img-fluid" alt="">
+                <div class="card-info">
+                    <h4 class="blog-title">Oni-chan</h4>
+                    <h6 class="country">Japan</h6>
+                    <p class="blog-description">well, i got lots of words i want to say about .....</p>
+                    <a href="DetaledBlogtwo.html" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="Popular-Blog">
+                <img src="../Sources/img/blogss/Argentina.jpg" class="img-fluid" alt="">
+                <div class="card-info">
+                    <h4 class="blog-title">Not everything is Messi</h4>
+                    <h6 class="country">Argentina</h6>
+                    <p class="blog-description">well, i got lots of words i want to say about .....</p>
+                    <a href="DetaledBlogtwo.html" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="Popular-Blog">
+                <img src="../Sources/img/blogss/finland.jpg" class="img-fluid" alt="">
+                <div class="card-info">
+                    <h4 class="blog-title">Cold, but romantic</h4>
+                    <h6 class="country">Finland</h6>
+                    <p class="blog-description">well, i got lots of words i want to say about .....</p>
+                    <a href="DetaledBlogtwo.html" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
 </html>

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/Sources/css/HomePage.css">
     <script src="../Sources/JavaScript/IndexFetch.js"></script>
     <script src="../Sources/JavaScript/Highlighter.js"></script>
+    <script src="../Sources/JavaScript/SmoothScrollHomePage.js"></script>
 </head>
 <body>
   <div id="navbar-container"></div>
@@ -18,7 +19,7 @@
       <img src="/Sources/img/b1.jpg" id="Img_1">
     </div>
   
-    <a href="/Pages/TravelList.html" class="banner-image">
+    <a a href="#" class="banner-image" data-target="WhereToNext">
       <img src="/Sources/img/p1.jpg" id="Linked_Img">
       <h3 class="Link-Text" style = "font-weight: bold;">Discover story-worthy travel moments</h3>
     </a>
@@ -40,7 +41,7 @@
   </div>
 
   <div class="reverse-gradient-section">
-    <div class="main-content">
+    <div class="main-content" id="WhereToNext">
         <h1 class="section-title">Where To Next?</h1>
         <div class="image-row">
             <a href="#">
