@@ -38,6 +38,7 @@
     width:5em;
 }
 
+
 .SBContainer{
     position: relative;
     width:35rem;
@@ -45,20 +46,18 @@
 }
 
 
-.CardsContainer{
-        /*background-color:  #dddddd;*/
-    width:95%;
-    height:95%;
-   margin-left: 100px;
-}
+ .CardsContainer{ 
+     width:100%; 
+     height:100%; 
+     margin-bottom: 0px;
+} 
 
 .CardsFlex{
     
     display:flex;
+    width: 100%;
+    margin-left: 40px;
     flex-direction: row;
-    overflow: scroll;
-    overflow-y: hidden;
-    overflow-x: hidden;
     justify-content:flex-start;
     flex-wrap:wrap;
     padding: 2rem;
@@ -95,3 +94,37 @@
     color: rgb(95, 95, 95);
 }
 
+@media (max-width:480px) {
+
+    body{width: 100%;}
+    #SearchKit{
+        width:263px;
+        margin-top: 10px;
+    }
+    .SBContainer{
+        width:12em;
+    }
+
+    #LocationSelect{
+        width:6em;
+    }   
+
+    .WholeCard{
+        width:4em;
+    }
+
+    .CardsContainer{
+        width:100%;
+    }
+    .CardsFlex{
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    .btn-group{
+        width:3em;
+        height:2.4em;
+    }
+    #LocationSelect{
+        display: none;
+    }
+}
