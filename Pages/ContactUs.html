@@ -3,82 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Contact Us Page</title>
+  <!-- Link for Font Awesome icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <!-- Link for Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/Sources/css/Footer.css">
   <link rel="stylesheet" href="/Sources/css/ContactUs.css">
-  <script src="../Sources/JavaScript/IndexFetch.js"></script>
 </head>
 <body>
   <div id="navbar-container"></div>
+  <!-- the section for the contact -->
   <section class="contact">
-    <div class="content">
+    <!-- header content used = text-center to center the text using boottrap -->
+    <div class="content text-center">
       <h2>Contact Us</h2>
       <p>You can send us your problem here and we will try to contact you as soon as possible.</p>
     </div>
     <div class="container">
-      <div class="contactInfo">
-        <div class="box">
-          <div class="icon"><i class="fa-solid fa-reply"></i></div>
-          <div class="text">
-            <h3>Address</h3>
-            <p>4671 Sugar Camp Road,<br>Owatonna, Minnesota,<br>55060</p>
+      <!-- divide the content into coloumns  -->
+      <div class="row">
+        <!-- Contact Info Section -->
+        <div class="col-md-6 contactInfo">
+          <!-- class from the Bootstrap framework,takes up 6 out of 12 available grid spaces -->
+          <div class="box">
+            <div class="icon"><i class="fa-solid fa-reply"></i></div>
+            <!-- Font Awesome popular icon library The fa-solid class specifies that you want to use an icon from Font Awesome's solid set -->
+            <div class="text">
+              <h3>Address</h3>
+              <p>4671 Sugar Camp Road,<br>Owatonna, Minnesota,<br>55060</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>507-475-6094</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>wrub7d78i0e@temporary-mail.net</p>
+            </div>
           </div>
         </div>
-        <div class="box">
-          <div class="icon"><i class="fa-solid fa-phone"></i></div>
-          <div class="text">
-            <h3>Phone</h3>
-            <p>507-475-6094</p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="icon"><i class="fa-solid fa-envelope"></i></div>
-          <div class="text">
-            <h3>Email</h3>
-            <p>wrub7d78i0e@temporary-mail.net</p>
-          </div>
-        </div>
-      </div>
 
-      <div class="contactForm" style="width:80%;">
-        <form>
-          <h2>Send Message</h2>
-          <div class="inputBox">
-            <input type="text" name="fullName" required="required">
-            <span>Full Name</span>
-          </div>
-          <div class="inputBox">
-            <input type="text" name="email" required="required">
-            <span>Email</span>
-          </div>
-          <div class="inputBox">
-            <textarea name="message" required="required"></textarea>
-            <span>Type your Message...</span>
-          </div>
-          <div class="inputBox">
-            <input type="submit" value="Send">
-          </div>
-        </form>
+        <!-- Contact Form Section -->
+        <div class="col-md-6 contactForm" style="width:80%;">
+          <form class="form-inline">
+            <!-- bootstrap alignment -->
+            <h2>Send Message</h2>
+            <div class="form-group mb-3">
+              <label class="sr-only" for="fullName">Full Name</label>
+              <input type="text" class="form-control w-100" id="fullName" name="fullName" placeholder="Full Name" required>
+              <!-- Fields styled bootstrap for full widt. -->
+            </div>
+            <div class="form-group mb-3">
+              <label class="sr-only" for="email">Email</label>
+              <input type="email" class="form-control w-100" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group mb-3">
+              <label class="sr-only" for="message">Message</label>
+              <textarea class="form-control w-100" id="message" name="message" placeholder="Type your Message..." rows="4" required></textarea>
+            </div>
+            <div class="form-check mb-3">
+              <input type="checkbox" class="form-check-input" id="rememberMe">
+              <label class="form-check-label" for="rememberMe">Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </div>
       </div>
     </div>
   </section>
-  <footer class="footer">
+<!--  the validation part using javascript -->
+  <script defer>
+  
+    <footer class="footer">
             <div class="footer-content">
       
             <p class="copyright">2024 Ui Project teehee. All rights reserved. <a href="http://127.0.0.1:5500/Pages/ContactUs.html" class="contact-link">Contact Us</a></p>
         </div>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    {
+      // allows refrenceing to check the input value in the form 
       const form = document.querySelector("form");
-
+      //  check the validaion whenever the user tries to submit a form
       form.addEventListener("submit", function (event) {
         const fullName = form.elements["fullName"].value.trim();
         const email = form.elements["email"].value.trim();
         const message = form.elements["message"].value.trim();
 
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const emailPattern = /@/;
 
         let boolValidation = true;
         let errorAlert = "";
@@ -99,7 +116,7 @@
           alert(errorAlert);
         }
       });
-    });
+    };
   </script>
 </body>
 </html>
