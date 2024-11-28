@@ -24,6 +24,9 @@
 
     font-style: italic;
 }
+
+#ModalButton {width:6em;}
+
 .btn-group{
     height:2.5em;
 

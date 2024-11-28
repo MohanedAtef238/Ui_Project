@@ -1,5 +1,6 @@
 var SearchFilter;
 var CheckFilter;
+var ShowModal;
 addEventListener("DOMContentLoaded",()=>{
 
     cards=document.getElementsByClassName("wholeCard");
@@ -55,6 +56,13 @@ addEventListener("DOMContentLoaded",()=>{
         }
 
 
+    }
+
+    ShowModal=function(name)
+    {
+        console.log('here');
+        console.log(name);
+        $('#l').modal('show');
     }
     
 

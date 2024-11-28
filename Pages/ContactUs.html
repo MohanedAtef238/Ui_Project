@@ -5,9 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Contact Us Page</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/Sources/css/Footer.css">
   <link rel="stylesheet" href="/Sources/css/ContactUs.css">
+  <script src="../Sources/JavaScript/IndexFetch.js"></script>
 </head>
 <body>
+  <div id="navbar-container"></div>
   <section class="contact">
     <div class="content">
       <h2>Contact Us</h2>
@@ -38,7 +42,7 @@
         </div>
       </div>
 
-      <div class="contactForm">
+      <div class="contactForm" style="width:80%;">
         <form>
           <h2>Send Message</h2>
           <div class="inputBox">
@@ -60,7 +64,11 @@
       </div>
     </div>
   </section>
-
+  <footer class="footer">
+            <div class="footer-content">
+      
+            <p class="copyright">2024 Ui Project teehee. All rights reserved. <a href="http://127.0.0.1:5500/Pages/ContactUs.html" class="contact-link">Contact Us</a></p>
+        </div>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const form = document.querySelector("form");

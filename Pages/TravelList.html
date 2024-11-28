@@ -7,6 +7,8 @@
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         <link href="../Sources/css/TravelList.css" rel="stylesheet">
         <title>Travel List</title>
+        <link rel="stylesheet" href="/Sources/css/Footer.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="../Sources/JavaScript/IndexFetch.js"></script>
         <script src="../Sources/JavaScript/TravelList.js"></script>
     </head>
@@ -38,7 +40,7 @@
             </div>
             <div class="CardsContainer">
             <div class="CardsFlex"> 
-                <div class="wholeCard">
+                    <div class="wholeCard"  onclick="ShowModal(this.data)">
                         <div class="alert alert-primary" role="alert">
                             <p>New!</p>
                         </div>
@@ -48,7 +50,29 @@
                             <h5 class="card-title">London,UK</h5>
                             </div>
                         </div>
+                     </div>                         
+                <!-- Modal -->
+                <div class="modal fade" id="l" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">London, UK</h5>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p> <b>Date: </b> 11/12/2024 - 11/3/2025 </p>
+                        <p> <b>Sponsors:</b> <a href="https://www.visitengland.com/">Visit England</a>, <a href="https://www.instapay.eg/">Instapay</a>, Sportofolio ,<a href="https://www.egyptair.com/en/Pages/HomePage.aspx">Egypt Air</a></p>
+                        <p> <b>Brief's brief:</b></p>
+                        <p>
+                            London, the capital city of England, is a vibrant metropolis known for its rich history, diverse culture, and iconic landmarks.
+                        </p>
+                        <a class="btn btn-outline-primary" id="ModalButton" href="http://127.0.0.1:5500/Pages/Destinations/London.html" role="button"> Full Page </a>
+                        
+                    </div>
+                    </div>
                 </div>
+                </div>                               
+
                 <div class="wholeCard">
                         <div class="alert alert-primary" role="alert">
                             <p>New!</p>
@@ -147,7 +171,12 @@
                 </nav>
 
             </div>
-        
+        <footer class="footer">
+            <div class="footer-content">
+      
+            <p class="copyright">2024 Ui Project teehee. All rights reserved. <a href="http://127.0.0.1:5500/Pages/ContactUs.html" class="contact-link">Contact Us</a></p>
+        </div>
+</footer>
     </body>
 
 </html>
